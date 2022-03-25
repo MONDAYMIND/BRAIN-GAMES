@@ -3,8 +3,12 @@ name: linter-check
 on: push
 
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
+      with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: make install
       - name: check linter
-        run: make lint
+      - run: make lint
