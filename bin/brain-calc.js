@@ -1,30 +1,19 @@
-// В играх должно остаться только то, что индивидуально для конкретной игры
-// Это правила игры и функция - генератор раунда, которая генерирует пару вопрос-ответ.
-// каждая игра предоставляет движку свои правила и генератор, а движок уже дергает генератор
-// каждый раз, когда ему нужно получить вопрос и правильный ответ на него
+#!/usr/bin/env node
 
 // функция генерирует пару "вопрос - прав. ответ на него" в раунде, исполняемый файл вызывает ф-ию
+import {
+  car, cdr, isPair,
+} from '@hexlet/pairs';
+import calculateNumbers from '../games/calcgame.js';
+import greetByName, { name, questionAndAnswer } from '../src/index.js';
 
-логика игры:
-
-1. Приветствие, запомнил имя
-2. What is the result of the expression?
-3. 3 раза появляется вопрос :
-Question: рандом. число +/-/ * рандом. число
-Your answer: поле для ответа, запомнил ответ
-
-4. Сравнение ответа с прав. ответом
-5. Коррект или ошибка
-
-const operators = ['+', '-', '*'];
+greetByName();
 
 console.log('What is the result of the expression?');
 
-const question = `${generateRandomNumber(30)} ${operators[generateRandomNumber(2)]} ${generateRandomNumber(30)}`;
-const questionIsNumber = Number.question;
+const calculateNumbers(); // через константу значения сохраняются, сделать цикл ???
 
-const rightAnswer = questionIsNumber;
+const one = car(pair)
 
-let answer;
-switch(num) {
-  case 1:  // if (num === 1)
+questionAndAnswer(car(calculateNumbers()), cdr(calculateNumbers()));
+// функция вызывается 2 раза, разные значения
