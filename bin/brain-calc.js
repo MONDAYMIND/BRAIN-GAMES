@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-
-// функция генерирует пару "вопрос - прав. ответ на него" в раунде, исполняемый файл вызывает ф-ию
 import {
-  car, cdr, isPair,
+  car, cdr,
 } from '@hexlet/pairs';
 import calculateNumbers from '../games/calcgame.js';
 import greetByName, { name, questionAndAnswer } from '../src/index.js';
@@ -11,9 +9,16 @@ greetByName();
 
 console.log('What is the result of the expression?');
 
-const calculateNumbers(); // через константу значения сохраняются, сделать цикл ???
+const cycle = () => {
+  for (let i = 0; i < 3; i += 1) {
+    const forRemember = calculateNumbers();
+    if (questionAndAnswer(car(forRemember), cdr(forRemember)) === 'failure') {
+      return 'failure';
+    }
+  }
 
-const one = car(pair)
+  console.log(`Congratulations, ${name}!`);
+  return 'Congratulations';
+};
 
-questionAndAnswer(car(calculateNumbers()), cdr(calculateNumbers()));
-// функция вызывается 2 раза, разные значения
+cycle();

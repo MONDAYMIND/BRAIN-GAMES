@@ -1,5 +1,5 @@
 import {
-  cons, car,
+  cons,
 } from '@hexlet/pairs';
 import generateRandomNumber from '../src/randomNumberGenerator.js';
 
