@@ -2,19 +2,19 @@
 
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
-import calculateNumbers from '../games/calcgame.js';
+import findTheGCD, { rulesOfTheGame } from '../games/gcdgame.js';
 import compareAnswers from '../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 
-console.log('What is the result of the expression?');
+console.log(rulesOfTheGame);
 
 const cycle = () => {
   for (let i = 0; i < 3; i += 1) {
-    const questAndRigthAnsw = calculateNumbers();
-    if (compareAnswers(car(questAndRigthAnsw), cdr(questAndRigthAnsw)) === 'failure') {
+    const questAndRightAnsw = findTheGCD();
+    if (compareAnswers(car(questAndRightAnsw), cdr(questAndRightAnsw)) === 'failure') {
       return 'failure';
     }
   }

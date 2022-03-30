@@ -5,16 +5,8 @@
 import readlineSync from 'readline-sync';
 
 let name;
-const greetByName = () => {
-  console.log('Welcome to the Brain Games!');
-  name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-};
 
-export default greetByName;
-export { name };
-
-const questionAndAnswer = (question, rightAnswer) => {
+const compareAnswers = (question, rightAnswer) => {
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
 
@@ -28,4 +20,4 @@ const questionAndAnswer = (question, rightAnswer) => {
   return 'Correct!';
 };
 
-export { questionAndAnswer };
+export default compareAnswers;
