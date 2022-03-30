@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-import parityCheck from '../games/paritygame.js';
+import parityCheck, { rulesOfTheGame } from '../games/paritygame.js';
+import compareAnswers from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
-
-parityCheck();
+compareAnswers(rulesOfTheGame, parityCheck);

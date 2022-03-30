@@ -1,19 +1,27 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from '@hexlet/pairs';
 
-const name = 'Anya';
+const compareAnswers = (rulesOfTheGame, gameFunction) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
 
-const compareAnswers = (question, rightAnswer) => {
-  console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
+  console.log(rulesOfTheGame);
 
-  if (Number(answer) === rightAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${name}!`);
-    return 'failure';
+  for (let i = 0; i < 3; i += 1) {
+    const questAndRightAnsw = gameFunction();
+    console.log(`Question: ${car(questAndRightAnsw)}`);
+    const answer = readlineSync.question('Your answer: ');
+
+    if (Number(answer) === cdr(questAndRightAnsw) || answer === cdr(questAndRightAnsw)) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${cdr(questAndRightAnsw)}'.\nLet's try again, ${name}!`);
+      return 'failure';
+    }
   }
-
-  return 'Correct!';
+  console.log(`Congratulations, ${name}!`);
+  return 'Congratulations';
 };
 
 export default compareAnswers;

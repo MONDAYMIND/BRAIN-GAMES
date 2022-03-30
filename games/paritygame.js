@@ -1,34 +1,22 @@
-import readlineSync from 'readline-sync';
+import { cons } from '@hexlet/pairs';
+import generateRandomNumber from '../src/randomNumberGenerator.js';
 
-const checkParity = (number) => {
-  if (number % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+export const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const parityCheck = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const question = generateRandomNumber(100);
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  let rightAnswer;
 
-  const numbersForParityCheck = [15, 6, 7];
-
-  for (let i = 0; i < numbersForParityCheck.length; i += 1) {
-    console.log(`Question: ${numbersForParityCheck[i]}`);
-    const answer = readlineSync.question('Your answer: ');
-
-    if (answer === checkParity(numbersForParityCheck[i])) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${checkParity(numbersForParityCheck[i])}'.\nLet's try again, ${name}!`);
-      return 'failure';
-    }
+  if (question % 2 === 0) {
+    rightAnswer = 'yes';
+  } else {
+    rightAnswer = 'no';
   }
 
-  console.log(`Congratulations, ${name}!`);
-  return 'failure';
+  const questionAndRightAnswer = cons(question, rightAnswer);
+
+  return questionAndRightAnswer;
 };
 
 export default parityCheck;

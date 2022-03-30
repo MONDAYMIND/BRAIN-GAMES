@@ -1,12 +1,7 @@
-import {
-  cons,
-} from '@hexlet/pairs';
+import { cons } from '@hexlet/pairs';
 import generateRandomNumber from '../src/randomNumberGenerator.js';
 
-// В играх должно остаться только то, что индивидуально для конкретной игры
-// Это правила игры и функция - генератор раунда, которая генерирует пару вопрос-ответ.
-// каждая игра предоставляет движку свои правила и генератор, а движок уже дергает генератор
-// каждый раз, когда ему нужно получить вопрос и правильный ответ на него
+export const rulesOfTheGame = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
