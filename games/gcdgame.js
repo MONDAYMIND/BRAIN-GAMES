@@ -1,7 +1,5 @@
 import _ from 'lodash';
-import {
-  cons,
-} from '@hexlet/pairs';
+import { cons } from '@hexlet/pairs';
 import generateRandomNumber from '../src/randomNumberGenerator.js';
 import findDivisors from '../src/findDivisors.js';
 

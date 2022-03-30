@@ -11,3 +11,6 @@ https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9
 
 Аскинема с игрой brain-gcd:
 https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d
+
+Аскинема с игрой brain-progression:
+
