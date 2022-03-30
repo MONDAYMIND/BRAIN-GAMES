@@ -3,5 +3,11 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![linter-check](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
 
-Ссылка на аскинему с установкой пакета, запуском, победой и поражением:
+Аскинема с игрой brain-even:
 https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi
+
+Аскинема с игрой brain-calc:
+https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9
+
+Аскинема с игрой brain-gcd:
+https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d
