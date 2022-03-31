@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import generateRandomNumber from '../src/randomNumberGenerator.js';
 
-export const rulesOfTheGame = 'What number is missing in the progression?'; // добавить экспорт
+export const rulesOfTheGame = 'What number is missing in the progression?';
 
 const createProgression = () => {
   const firstProgressionNumber = generateRandomNumber(20);
