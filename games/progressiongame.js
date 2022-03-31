@@ -10,7 +10,7 @@ const createProgressionWithMissingNumber = () => {
   const maxProgressionStep = 10;
   const progressionStep = generateRandomNumber(maxProgressionStep);
 
-  const maxIndexOfMissingNumber = 10;
+  const maxIndexOfMissingNumber = 9;
   const indexOfMissingNumber = generateRandomNumber(maxIndexOfMissingNumber);
 
   const progression = [firstProgressionNumber];
