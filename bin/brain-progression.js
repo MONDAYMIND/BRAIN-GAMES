@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import createProgression, { rulesOfTheGame } from '../games/progressiongame.js';
-import compareAnswers from '../src/index.js';
+import createProgressionWithMissingNumber, { rulesOfTheGame } from '../games/progressiongame.js';
+import realizeGameLogic from '../src/index.js';
 
-compareAnswers(rulesOfTheGame, createProgression);
+realizeGameLogic(rulesOfTheGame, createProgressionWithMissingNumber);

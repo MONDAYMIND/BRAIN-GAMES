@@ -3,10 +3,15 @@ import generateRandomNumber from '../src/randomNumberGenerator.js';
 
 export const rulesOfTheGame = 'What number is missing in the progression?';
 
-const createProgression = () => {
-  const firstProgressionNumber = generateRandomNumber(20);
-  const progressionStep = generateRandomNumber(10);
-  const indexOfMissingNumber = generateRandomNumber(9);
+const createProgressionWithMissingNumber = () => {
+  const firstMaxProgressionNumber = 20;
+  const firstProgressionNumber = generateRandomNumber(firstMaxProgressionNumber);
+
+  const maxProgressionStep = 10;
+  const progressionStep = generateRandomNumber(maxProgressionStep);
+
+  const maxIndexOfMissingNumber = 10;
+  const indexOfMissingNumber = generateRandomNumber(maxIndexOfMissingNumber);
 
   const progression = [firstProgressionNumber];
 
@@ -24,4 +29,4 @@ const createProgression = () => {
   return questionAndRightAnswer;
 };
 
-export default createProgression;
+export default createProgressionWithMissingNumber;

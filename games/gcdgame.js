@@ -6,10 +6,14 @@ import findDivisors from '../src/findDivisors.js';
 export const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
 
 const findTheGCD = () => {
-  const firstRandom = (generateRandomNumber(200));
+  const maxRandomNumber = 200;
+
+  const firstRandom = (generateRandomNumber(maxRandomNumber));
   const firstRandomDivisors = findDivisors(firstRandom);
-  const secondRandom = (generateRandomNumber(200));
+
+  const secondRandom = (generateRandomNumber(maxRandomNumber));
   const secondRandomDivisors = findDivisors(secondRandom);
+
   const question = `${firstRandom} ${secondRandom}`;
 
   const intersectionOfDivisors = _.intersection(firstRandomDivisors, secondRandomDivisors);

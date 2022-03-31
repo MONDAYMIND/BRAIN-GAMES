@@ -3,8 +3,9 @@ import generateRandomNumber from '../src/randomNumberGenerator.js';
 
 export const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const primeCheck = () => {
-  const question = generateRandomNumber(100);
+const checkIfNumberIsPrime = () => {
+  const maxNumberForPrimeCheck = 100;
+  const question = generateRandomNumber(maxNumberForPrimeCheck);
 
   let rightAnswer = 'yes';
 
@@ -19,4 +20,4 @@ const primeCheck = () => {
   return questionAndRightAnswer;
 };
 
-export default primeCheck;
+export default checkIfNumberIsPrime;

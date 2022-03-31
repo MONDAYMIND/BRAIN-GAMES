@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import findTheGCD, { rulesOfTheGame } from '../games/gcdgame.js';
-import compareAnswers from '../src/index.js';
+import realizeGameLogic from '../src/index.js';
 
-compareAnswers(rulesOfTheGame, findTheGCD);
+realizeGameLogic(rulesOfTheGame, findTheGCD);

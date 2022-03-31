@@ -8,9 +8,12 @@ const operators = ['+', '-', '*'];
 let rightAnswer;
 
 const calculateNumbers = () => {
-  const randomOperator = operators[generateRandomNumber(2)];
-  const firstRandom = generateRandomNumber(30);
-  const secondRandom = generateRandomNumber(30);
+  const maxIndexOfOperators = 2;
+  const randomOperator = operators[generateRandomNumber(maxIndexOfOperators)];
+
+  const maxRandomNumber = 30;
+  const firstRandom = generateRandomNumber(maxRandomNumber);
+  const secondRandom = generateRandomNumber(maxRandomNumber);
   const question = `${firstRandom} ${randomOperator} ${secondRandom}`;
 
   switch (randomOperator) {

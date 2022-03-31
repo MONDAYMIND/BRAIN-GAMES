@@ -3,8 +3,9 @@ import generateRandomNumber from '../src/randomNumberGenerator.js';
 
 export const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const parityCheck = () => {
-  const question = generateRandomNumber(100);
+const checkIfNumberIsEven = () => {
+  const maxNumberForEvenCheck = 100;
+  const question = generateRandomNumber(maxNumberForEvenCheck);
 
   let rightAnswer;
 
@@ -19,4 +20,4 @@ const parityCheck = () => {
   return questionAndRightAnswer;
 };
 
-export default parityCheck;
+export default checkIfNumberIsEven;

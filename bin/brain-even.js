@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import parityCheck, { rulesOfTheGame } from '../games/paritygame.js';
-import compareAnswers from '../src/index.js';
+import checkIfNumberIsEven, { rulesOfTheGame } from '../games/evengame.js';
+import realizeGameLogic from '../src/index.js';
 
-compareAnswers(rulesOfTheGame, parityCheck);
+realizeGameLogic(rulesOfTheGame, checkIfNumberIsEven);
