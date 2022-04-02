@@ -15,7 +15,7 @@
 
 Порядок установки и запуска игр:
 1. Выполнить в командной строке команду "git clone git@github.com:MONDAYMIND/frontend-project-lvl1.git";
-2. Перейти к директорию с помощью команды "cd frontend-project-lvl1";
+2. Перейти в директорию с помощью команды "cd frontend-project-lvl1";
 3. Выполнить команду "make install";
 4. Выполнить команду "sudo npm link";
 5. Теперь можно запускать любую из игр вызовом в командной строке "brain-even", "brain-calc" и т.д.
