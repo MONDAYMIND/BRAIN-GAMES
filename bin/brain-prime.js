@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import checkIfNumberIsPrime, { rulesOfTheGame } from '../games/primegame.js';
-import realizeGameLogic from '../src/index.js';
+import enginePrimeGame from '../src/games/primegame.js';
 
-realizeGameLogic(rulesOfTheGame, checkIfNumberIsPrime);
+enginePrimeGame();

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import createProgressionWithMissingNumber, { rulesOfTheGame } from '../games/progressiongame.js';
-import realizeGameLogic from '../src/index.js';
+import engineProgressionGame from '../src/games/progressiongame.js';
 
-realizeGameLogic(rulesOfTheGame, createProgressionWithMissingNumber);
+engineProgressionGame();

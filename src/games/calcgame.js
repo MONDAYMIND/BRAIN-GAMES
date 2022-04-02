@@ -1,11 +1,10 @@
 import { cons } from '@hexlet/pairs';
-import generateRandomNumber from '../src/randomNumberGenerator.js';
+import generateRandomNumber from '../randomNumberGenerator.js';
+import engineGame from '../index.js';
 
-export const rulesOfTheGame = 'What is the result of the expression?';
+const rulesOfTheGame = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
-
-let rightAnswer;
 
 const calculateNumbers = () => {
   const maxIndexOfOperators = 2;
@@ -15,6 +14,8 @@ const calculateNumbers = () => {
   const firstRandom = generateRandomNumber(maxRandomNumber);
   const secondRandom = generateRandomNumber(maxRandomNumber);
   const question = `${firstRandom} ${randomOperator} ${secondRandom}`;
+
+  let rightAnswer;
 
   switch (randomOperator) {
     case '+':
@@ -34,9 +35,9 @@ const calculateNumbers = () => {
       break;
   }
 
-  const questionAndRightAnswer = cons(question, rightAnswer);
+  const questionAndRightAnswer = cons(question, String(rightAnswer));
 
   return questionAndRightAnswer;
 };
 
-export default calculateNumbers;
+export default () => engineGame(rulesOfTheGame, calculateNumbers);

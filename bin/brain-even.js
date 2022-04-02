@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import checkIfNumberIsEven, { rulesOfTheGame } from '../games/evengame.js';
-import realizeGameLogic from '../src/index.js';
+import engineEvenGame from '../src/games/evengame.js';
 
-realizeGameLogic(rulesOfTheGame, checkIfNumberIsEven);
+engineEvenGame();

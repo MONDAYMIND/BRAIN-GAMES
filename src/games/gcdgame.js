@@ -1,9 +1,21 @@
 import _ from 'lodash';
 import { cons } from '@hexlet/pairs';
-import generateRandomNumber from '../src/randomNumberGenerator.js';
-import findDivisors from '../src/findDivisors.js';
+import generateRandomNumber from '../randomNumberGenerator.js';
+import engineGame from '../index.js';
 
-export const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
+const rulesOfTheGame = 'Find the greatest common divisor of given numbers.';
+
+const findDivisors = (number) => {
+  const divisors = [];
+
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
+      divisors.push(i);
+    }
+  }
+
+  return divisors;
+};
 
 const findTheGCD = () => {
   const maxRandomNumber = 200;
@@ -20,9 +32,9 @@ const findTheGCD = () => {
 
   const rightAnswer = intersectionOfDivisors.at(-1);
 
-  const questionAndRightAnswer = cons(question, rightAnswer);
+  const questionAndRightAnswer = cons(question, String(rightAnswer));
 
   return questionAndRightAnswer;
 };
 
-export default findTheGCD;
+export default () => engineGame(rulesOfTheGame, findTheGCD);

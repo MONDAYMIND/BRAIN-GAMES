@@ -1,7 +1,8 @@
 import { cons } from '@hexlet/pairs';
-import generateRandomNumber from '../src/randomNumberGenerator.js';
+import generateRandomNumber from '../randomNumberGenerator.js';
+import engineGame from '../index.js';
 
-export const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rulesOfTheGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const checkIfNumberIsPrime = () => {
   const maxNumberForPrimeCheck = 100;
@@ -20,4 +21,4 @@ const checkIfNumberIsPrime = () => {
   return questionAndRightAnswer;
 };
 
-export default checkIfNumberIsPrime;
+export default () => engineGame(rulesOfTheGame, checkIfNumberIsPrime);

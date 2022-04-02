@@ -1,7 +1,8 @@
 import { cons } from '@hexlet/pairs';
-import generateRandomNumber from '../src/randomNumberGenerator.js';
+import generateRandomNumber from '../randomNumberGenerator.js';
+import engineGame from '../index.js';
 
-export const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const checkIfNumberIsEven = () => {
   const maxNumberForEvenCheck = 100;
@@ -20,4 +21,4 @@ const checkIfNumberIsEven = () => {
   return questionAndRightAnswer;
 };
 
-export default checkIfNumberIsEven;
+export default () => engineGame(rulesOfTheGame, checkIfNumberIsEven);
