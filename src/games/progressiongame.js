@@ -4,7 +4,7 @@ import engineGame from '../index.js';
 
 const rulesOfTheGame = 'What number is missing in the progression?';
 
-const createProgressionWithMissingNumber = () => {
+const generateRound = () => {
   const firstMaxProgressionNumber = 20;
   const firstProgressionNumber = generateRandomNumber(firstMaxProgressionNumber);
 
@@ -32,4 +32,4 @@ const createProgressionWithMissingNumber = () => {
   return questionAndRightAnswer;
 };
 
-export default () => engineGame(rulesOfTheGame, createProgressionWithMissingNumber);
+export default () => engineGame(rulesOfTheGame, generateRound);
