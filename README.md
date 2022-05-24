@@ -26,16 +26,16 @@
 В приведенных ниже аскинемах Вы можете ознакомиться с процессом установки данного пакета и запуском игр с разными исходами.
 
 ## Запуск игры brain-even:
-[![asciicast](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.svg)](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi)
+[![asciicast](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.svg)]
 
 ## Запуск игры brain-calc:
-[![asciicast](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9.svg)](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9)
+[![asciicast](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9.svg)]
 
 ## Запуск игры brain-gcd:
-[![asciicast](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d.svg)](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d)
+[![asciicast](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d.svg)]
 
 ## Запуск игры brain-progression:
-[![asciicast](https://asciinema.org/a/482036.svg)](https://asciinema.org/a/482036)
+[![asciicast](https://asciinema.org/a/482036.svg)]
 
 ## Запуск игры brain-prime:
-[![asciicast](https://asciinema.org/a/482558.svg)](https://asciinema.org/a/482558)
+[![asciicast](https://asciinema.org/a/482558.svg)]
