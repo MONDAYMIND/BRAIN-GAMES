@@ -26,16 +26,16 @@
 В приведенных ниже аскинемах Вы можете ознакомиться с процессом установки данного пакета и запуском игр с разными исходами.
 
 ## Запуск игры brain-even:
-<script id="asciicast-NghIpECsppw38RzogHwsNiGmi" src="https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.js" async></script>
+[![asciicast](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.svg)](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi)
 
 ## Запуск игры brain-calc:
-<script id="asciicast-gah4DkDUP2ZnSAxfx1cabTYj9" src="https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9.js" async></script>
+[![asciicast](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9.svg)](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9)
 
 ## Запуск игры brain-gcd:
-<script id="asciicast-6efIWuAPVYjs7K1ighVKfex8d" src="https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d.js" async></script>
+[![asciicast](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d.svg)](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d)
 
 ## Запуск игры brain-progression:
-<script id="asciicast-482036" src="https://asciinema.org/a/482036.js" async></script>
+[![asciicast](https://asciinema.org/a/482036.svg)](https://asciinema.org/a/482036)
 
 ## Запуск игры brain-prime:
-<script id="asciicast-482558" src="https://asciinema.org/a/482558.js" async></script>
+[![asciicast](https://asciinema.org/a/482558.svg)](https://asciinema.org/a/482558)
