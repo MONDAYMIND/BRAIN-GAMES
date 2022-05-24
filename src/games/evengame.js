@@ -5,23 +5,16 @@ import engineGame from '../index.js';
 const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => {
-  let rightAnswer;
-
   if (number % 2 === 0) {
-    rightAnswer = 'yes';
-  } else {
-    rightAnswer = 'no';
+    return true;
   }
-
-  return rightAnswer;
+  return false;
 };
 
 const generateRound = () => {
   const maxNumberForEvenCheck = 100;
   const question = generateRandomNumber(maxNumberForEvenCheck);
-
-  const rightAnswer = isEven(question);
-
+  const rightAnswer = isEven(question) ? 'yes' : 'no';
   const questionAndRightAnswer = cons(question, rightAnswer);
 
   return questionAndRightAnswer;

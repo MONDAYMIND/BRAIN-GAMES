@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MONDAYMIND/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MONDAYMIND/frontend-project-lvl1/actions)
-<a href="https://codeclimate.com/github/MONDAYMIND/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/61ccff5c98f0c3c45449/maintainability" /></a>
-![linter-check](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
+[![linter-check](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/61ccff5c98f0c3c45449/maintainability)](https://codeclimate.com/github/MONDAYMIND/frontend-project-lvl1/maintainability)
 
 Добро пожаловать в BRAIN-GAMES!
 Серия brain-games включает игры:
@@ -22,8 +22,8 @@
 
 В приведенных ниже аскинемах Вы можете ознакомиться с процессом установки данного пакета и запуском игр с разными исходами.
 
-Аскинема с игрой brain-even:
-https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi
+Запуск игры brain-even:
+[![asciicast](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.svg)](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi)
 
 Аскинема с игрой brain-calc:
 https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9
