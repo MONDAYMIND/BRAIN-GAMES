@@ -1,3 +1,5 @@
+# BRAIN-GAMES
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MONDAYMIND/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MONDAYMIND/frontend-project-lvl1/actions)
 [![linter-check](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/MONDAYMIND/frontend-project-lvl1/actions/workflows/linter-check.yml)
@@ -11,6 +13,7 @@
 4. brain-progression;
 5. brain-prime.
 
+## Setup
 Для установки и запкуска игр Вам понадобится терминал (командная строка) и Node.js версии 13 и выше.
 
 Порядок установки и запуска игр:
@@ -22,17 +25,17 @@
 
 В приведенных ниже аскинемах Вы можете ознакомиться с процессом установки данного пакета и запуском игр с разными исходами.
 
-Запуск игры brain-even:
+## Запуск игры brain-even:
 [![asciicast](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi.svg)](https://asciinema.org/a/NghIpECsppw38RzogHwsNiGmi)
 
-Аскинема с игрой brain-calc:
-https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9
+## Запуск игры brain-calc:
+[![asciicast](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9.svg)](https://asciinema.org/a/gah4DkDUP2ZnSAxfx1cabTYj9)
 
-Аскинема с игрой brain-gcd:
-https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d
+## Запуск игры brain-gcd:
+[![asciicast](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d.svg)](https://asciinema.org/a/6efIWuAPVYjs7K1ighVKfex8d)
 
-Аскинема с игрой brain-progression:
-https://asciinema.org/a/482036
+## Запуск игры brain-progression:
+[![asciicast](https://asciinema.org/a/482036.svg)](https://asciinema.org/a/482036)
 
-Аскинема с игрой brain-prime:
-https://asciinema.org/a/482558
+## Запуск игры brain-prime:
+[![asciicast](https://asciinema.org/a/482558.svg)](https://asciinema.org/a/482558)
